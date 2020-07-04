@@ -1,6 +1,5 @@
 import 'package:chat_app/ChatListScreen/screens/ChatListScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class MainPagesScreen extends StatefulWidget {
@@ -41,7 +40,7 @@ class _MainPagesScreenState extends State<MainPagesScreen> {
   
   Widget appBar() {
     return AppBar(
-      title: "Welcome".text.make(),
+      title: "Chat App".text.make(),
       centerTitle: true,
       actions: [
         Builder(
@@ -56,7 +55,6 @@ class _MainPagesScreenState extends State<MainPagesScreen> {
   Widget bottomNavBar() {
     return BottomNavigationBar(
       elevation: 4,
-      // backgroundColor: Colors.grey[900],
       backgroundColor: Theme.of(context).appBarTheme.color,
       currentIndex: _pageIndex,
       selectedItemColor: Colors.white,
