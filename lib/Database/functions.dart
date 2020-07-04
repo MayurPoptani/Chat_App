@@ -6,7 +6,7 @@ import 'package:sqflite/sqflite.dart';
 
 const DATABASEFILENAME = "myDatabase.db";
 
-void initDatabase() async {
+Future<void> initDatabase() async {
   String dbFolderPath = await getDatabasesPath();
   var path = join(dbFolderPath, DATABASEFILENAME);
   if(!File(path).existsSync()) File(path).createSync(recursive: true);
